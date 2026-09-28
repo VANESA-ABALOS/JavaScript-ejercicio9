@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <title> Ejercicio 9. </title>
+
+        <h1>Ejercicio 9. </h1>
+       <meta charset="UTF-8">
+      </head>
+        <body>
+         <p>Usuario: <input type="text" id="nombre"></p>
+    
+         <p>Clave: <input type="password" id="clave" onblur="verificar()"></p>
+
+         <script>
+        function verificar() {
+            let pass = document.getElementById("clave").value;
+
+            if (pass.length < 7 || pass.length > 20) {
+                alert("La clave debe tener entre 7 y 20 caracteres.");
+            }
+        }
+    
+        </script>
+
+</html>
